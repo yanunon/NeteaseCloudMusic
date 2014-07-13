@@ -17,7 +17,8 @@ import sys
 
 #set cookie
 cookie_opener = urllib2.build_opener()
-cookie_opener.addheaders.append(('Cookie', 'appver=1.5.2'))
+cookie_opener.addheaders.append(('Cookie', 'appver=2.0.2'))
+cookie_opener.addheaders.append(('Referer', 'http://music.163.com'))
 urllib2.install_opener(cookie_opener)
 
 def encrypted_id(id):
